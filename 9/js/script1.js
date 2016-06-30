@@ -6,13 +6,13 @@ function compositionMaximally(count) {
         array = [];
     // generation array
     for(j = 0; j < count; j++){
-        array[j] = Math.random() * (30000 - (-30000)) + (-30000);
+        array[j] = Math.random() * (30000 - (-30000)) + (-30000); // it's better to save this constant to the some variable and use it
         array[j] = Math.round(array[j]);
     }
     console.log('array', array);
     // end generation array
     max1 = -30000;
-    max2 = max1;
+    max2 = max1; // you can use shortcase becouse all vars = the same value
     max3 = max1;
     for (i = 0; i < count; i++) {
         if (array[i] > max1) {

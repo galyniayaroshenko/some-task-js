@@ -2,9 +2,11 @@
 var number;
 number = prompt("Введіть числа послідовності:", "20, 2, 3, 5");
 function quantityEven(number) {
-    var count, result,
+    var count, 
+        result,
         array = [],
         sum = 0;
+
     array = number.split(',');
     count = array.length;
     for (var i = 0; i < count; i++) {
@@ -13,7 +15,7 @@ function quantityEven(number) {
             sum = sum + 1;
         }
     }
-    result = console.log("Кільість парних чисес які стоять на парних містях " + sum);
+    result = console.log("Кільість парних чисел які стоять на парних містях " + sum);
     return result;
 }
 quantityEven(number);
