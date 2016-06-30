@@ -1,5 +1,6 @@
 // task 2
 var someStr = "When;I was,in Germany first time-I was,six";
+// please use line breaks for better reading;
 function replaceSymbols(someStr) {
     var countLetter,
         replaceSymbols,
@@ -7,6 +8,7 @@ function replaceSymbols(someStr) {
         regExpCounterWords,
         regExpSymbols,
         result;
+
     countLetter = someStr.length;
     regExpCounterWords = / +(?:\S)/;
     regExpSymbols = /[\,\;]/g;

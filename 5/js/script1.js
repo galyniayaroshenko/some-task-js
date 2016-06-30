@@ -1,21 +1,25 @@
 // task 5
 var number;
+
 number = powerOfTwo("Введіть a", "8");
 function first(number) {
     if (!(number & (number - 1))) {
-        return console.log("Yes");
+        return console.log("Yes"); // please use one lang for all task no mixin
     } else {
         return console.log("No");
     }
 }
 powerOfTwo(number);
 
+// try to rewrite this func without do while
 function powerOfTwoOther(number) {
-    var number, x, n1;
+    var number, x, n1; // vars should be on the new lines;
+
     number = prompt("Введите число n", 0);
         if (number != null) {/* If you do not press the abolition */
             x = 0;  /* of 2 degree */
             n1 = 0; /* Here is the result of 2 to the power of x */
+
                 do { /* Started cycle */
                     x++; /* Increase the level of 1 */
                     n1 = Math.pow(2,x); /* Consider how much it will */
